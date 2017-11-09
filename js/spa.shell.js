@@ -21,7 +21,7 @@ spa.shell = (function() {
 
 		setJqueryMap = function () {
 			var $container = stateMap.$container;
-			jqueryMap = { $container: #container };
+			jqueryMap = { $container: $container };
 		};
 
 		initModule = function ($container) {
@@ -33,4 +33,4 @@ spa.shell = (function() {
 		return {
 			initModule: initModule
 		};
-});
+})();
